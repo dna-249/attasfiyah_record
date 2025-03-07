@@ -15,8 +15,8 @@ const Home = () => {
         {song? 
         (<div>{songs.map((song,index)=><div key={index} onClick={()=>setSong(false)}>
         <div onClick={()=>setSelect(song)}>{song}</div></div>)}</div>)
-        :(<div> 
-          <div className="blur"><img  src="/mal_salis.jpg" style={{ margin: 'auto',
+        :(<div className="green"> 
+          <div className="blur center"><img  src="/mal_salis.jpg" style={{ margin: 'auto',
                                          width:"150px",height:"150px",
                                          borderRadius:"10px"}} alt="" /><br />
         <div>

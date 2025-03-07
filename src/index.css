@@ -45,7 +45,19 @@ body{
   padding: 10px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: auto;
+  
 }
 .white{
   background-color: white;
+}
+
+.green{
+
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-items: center;
 }
