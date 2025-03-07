@@ -11,10 +11,12 @@ const Home = () => {
   
  if(toggle === true) {    return (
     <div>
-        <div className="center"><img src="/media2.png" width={200} alt=""/></div>
+        <div className="center absolute"><img src="/media2.png" width={200} alt=""/>
+        </div>
         {song? 
-        (<div>{songs.map((song,index)=><div key={index} onClick={()=>setSong(false)}>
-        <div onClick={()=>setSelect(song)}>{song}</div></div>)}</div>)
+        (<div className="blur3" > <h4>PlayList</h4>
+          {songs.map((song,index)=><div key={index} onClick={()=>setSong(false)}>
+        <div className="blur2" onClick={()=>setSelect(song)}>{song}</div></div>)}</div>)
         :(<div className="green"> 
           <div className="blur center"><img  src="/mal_salis.jpg" style={{ margin: 'auto',
                                          width:"150px",height:"150px",
