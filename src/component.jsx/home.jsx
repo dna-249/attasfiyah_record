@@ -15,11 +15,19 @@ const Home = () => {
         {song? 
         (<div>{songs.map((song,index)=><div key={index} onClick={()=>setSong(false)}>
         <div onClick={()=>setSelect(song)}>{song}</div></div>)}</div>)
-        :(<div> <h1>{select}</h1>
-         <ReactPlayer url={`/${select}`}  autoPlay controls /></div>)}
+        :(<div> 
+          <div className="blur"><img  src="/mal_salis.jpg" style={{ margin: 'auto',
+                                         width:"150px",height:"150px",
+                                         borderRadius:"10px"}} alt="" /><br />
+        <div>
+         <ReactPlayer url={`/${select}`} className="player" autoPlay controls /></div></div></div>)}
     </div>
   )} else {
-    return (<div className="center auto white_bg" onClick={()=>setToggle(true)}><div><img src="/media2.png" width={100} alt=""/><br/><img className="img" src="/mal_salis.jpg" alt="" /><br />presented by: <br/><h3>Mall Salis Ibrahim Tilde</h3></div>  </div>)
+    return (<div className="center auto">
+      <div className="white_bg" onClick={()=>setToggle(true)}>
+      <div className=" border"><img style={{ margin: 'auto',marginBottom:"20px"}} src="/media2.png" width={100} alt=""/><br/>
+      <img className="img" src="/mal_salis.jpg" style={{ margin: 'auto'}} alt="" /><br />
+      <h4>By <br />Mal Salis Ibrahim Tilde</h4></div>  </div> </div>)
   }
 }
 

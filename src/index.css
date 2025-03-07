@@ -11,6 +11,7 @@ body{
   align-items: center;
   justify-content: center;
   text-align: center;
+ 
 }
 .auto{
   margin: auto;
@@ -18,10 +19,7 @@ body{
   min-width:300px;
   height:100vh;
 }
-.react{
-  width: 100% !important;
-  height:100% !important;
-}
+
 .img{
   width: 200px;
   height: 200px;
@@ -30,8 +28,24 @@ body{
 .white_bg{
   background-color: #fff;
   width: 200px;
-  height: 400px;
   border-radius: 10px;
+  padding: 20px;
+  height: fit-content;
 
 }
-
+.player{
+  width: 250px !important;
+  height: 50px !important;
+}
+.blur{
+  backdrop-filter: blur(10px);
+  background-color: #ffffff75;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.white{
+  background-color: white;
+}
